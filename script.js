@@ -31,15 +31,14 @@ function addWicket() {
 
 const ScoreButtons = () => (
   <div>
-    <button onClick={() => addScore(0)}>0</button>{" "}
-    {/*this is how we pass argument to the function while calling it on button click*/}
+    <button onClick={() => addScore(0)}>0</button>
     <button onClick={() => addScore(1)}>1</button>
     <button onClick={() => addScore(2)}>2</button>
     <button onClick={() => addScore(3)}>3</button>
     <button onClick={() => addScore(4)}>4</button>
     <button onClick={() => addScore(5)}>5</button>
     <button onClick={() => addScore(6)}>6</button>
-    <button onClick={addWicket}>wicket</button>
+    <button onClick={addWicket}>Wicket</button>
   </div>
 );
 
@@ -52,8 +51,8 @@ const Result = () => (
         <span
           key={index}
           style={{
-            color: res === "w" ? "red" : "black",
-            fontWeight: res === "w" ? "bold" : "normal",
+            color: res === "W" ? "red" : "black",
+            fontWeight: res === "W" ? "bold" : "normal",
           }}
         >
           {res === 0 ? <strong>.</strong> : res}{" "}
@@ -74,7 +73,9 @@ function handleSubmit(event) {
   }
   ballwiseRes.unshift(
     // (<span>{hit}{","}{inputRef.current.value}</span>); /**this is onw way to get the commentary along with the score */  // using unshift to adding the last hit score to the beginning of the array
-    <span> {`${hit}, ${inputRef.current.value}`}</span>
+    <div>
+      <span className="resultbg"> {`${hit}, ${inputRef.current.value}`}</span>
+    </div>
   );
   // another way to get the commentary along with the score
 
@@ -87,7 +88,7 @@ function handleSubmit(event) {
 const Form = () => (
   <form onSubmit={handleSubmit}>
     <input value={hit} />
-    <input ref={inputRef} placeholder="write commentry" />
+    <input ref={inputRef} placeholder="Write comment" />
     <button>Submit</button>
   </form>
 );

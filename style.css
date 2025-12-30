@@ -1,0 +1,73 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+}
+
+body{
+     background-image: url("https://media.istockphoto.com/id/183890193/photo/soccer-ball-hits-the-net-and-makes-a-goal.jpg?s=2048x2048&w=is&k=20&c=7McW9-Iff43hObU0JjyK_NgYlRBFtQWygAnnv4dROvA=");
+     
+}
+
+h1 {
+ font-weight: bolder;
+ font-size: 40px;
+ color:rgb(46, 27, 27);
+ text-shadow: 2px 4px 9px #d6cdcd;
+
+}
+h2 {
+    font-weight: 800;
+    font-size: 30px;
+    color:rgb(27, 13, 13);
+}
+
+
+button{
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(123, 121, 121);
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px grey;
+}
+
+button:hover{
+    background-color: rgb(200, 197, 197);
+    transform:scale(1.05);
+}
+
+form{
+    margin-top: 20px;
+}
+form input{
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid rgb(123, 121, 121);
+    border-radius: 5px;
+    margin-right: 10px;
+}
+input::placeholder{
+    font-style: italic;
+}
+
+form button{
+    background-color: rgb(5, 26, 48);
+    color: white;
+    border: none;
+}
+form button:hover{
+    background-color: rgb(27, 56, 94);
+    transform:scale(1.05);
+}
+
+.resultbg{
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 3px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    display: inline-block;
+}
