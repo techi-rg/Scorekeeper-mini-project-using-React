@@ -61,10 +61,12 @@ Instead of using `useState`, the app manually re-renders components using `React
 
 ### 📂 Folder Structure
 
+```
 ├── index.html // React & CDN setup
 ├── script.js // App logic & components
 ├── style.css // Styling
 └── README.md // Project documentation
+```
 
 
 ---
